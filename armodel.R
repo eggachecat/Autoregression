@@ -1,8 +1,8 @@
 AR.model <- function(
-  previous = 1,  # is used to store the most previous Subscript 
-  coefficients = c(0.5, 0.8), # map to the coefficients of each previous value
-  initVals = c(1), # the initial values
-  times = 200 # how many recurrence need to be done
+  previous = 1,  
+  coefficients = c(0.5, 0.8),
+  initVals = c(1), 
+  times = 200 
   # default parameters stand for:
   # X(t) = 0.5 + 0.8*X(t-1) + error(t)
   # <=> (in matrix form) 
